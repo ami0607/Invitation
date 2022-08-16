@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=The+Nautigal&family=Yellowtail&display=swap');
-@media only screen and (max-width: 750px) {
-  img { max-width: 100%; }
-}
+
 
 *{
     color: white;
@@ -9,242 +7,189 @@
     
 }
 
-
-
-/* Header */
-header{
-    background-image: url(../image/lovegraph_7.jpg);
-    background-size: cover;
-    background-position: center;
-    padding-top: 21rem;
-    padding-bottom: 21rem;
-}
-
 h1{
     font-family: 'Dancing Script';
 }
 
-
-
-
-/* .demo {
-    width: 500px;
-    margin: 0 auto;
-    padding: 10px 0;
-    font-size: 20px;
-    color: white;
-  }
-.heading {
-    margin: 10px 0
-  }
-.demo3 .heading {
-    color: white;
-    text-align: center;
-    overflow: hidden;
-  }
-.demo3 .heading span {
-    display: inline-block;
-    position: relative;
-  }
-.demo3 .heading span:before,
-.demo3 .heading span:after {
-    content: "";
-    border-bottom: 2px solid white;
-    width: 45px;
-    margin: 0 15px;
-    position: absolute;
-    bottom: 13px;
-  }
-.demo3 .heading span:before {
-    right: 100%;
-  }
-.demo3 .heading span:after {
-    left: 100%;
-  } */
-
-
-
-
-
-
-/* Message */
-.message{
-  background: linear-gradient( rgba(215, 216, 210, 0.9), rgba(71, 164, 198, 0.9) ), url(../image/lovegraph_28.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
-
 h2{
-  font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 
-.message p{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* HEADER */
+header{
+    background-image: url(../image/lovegraph_7.jpg);
+    background-size: cover;
+    background-position: 50% center;
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+}
+
+/* MESSAGE */
+.message{
+    background: linear-gradient( rgba(215, 216, 210, 0.9), rgba(71, 164, 198, 0.7) ), url(../image/lovegraph_28.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PROFILE */
+.profile{
+    background: linear-gradient( rgba(71, 164, 198, 0.7), rgb(88, 168, 212, 1));
+}
+
+.head {
+    display: flex;
+    align-items: center;
+}
+ 
+.head:after {
+    content: "";
+    height: 1px;
+    flex-grow: 0.5;
+    background-color: white;
+}
+ 
+.head:after {
+    margin-left: 1rem;
 }
 
 /* Kazuki Profile */
-.profile{
-  background: linear-gradient( rgba(71, 164, 198, 0.9), rgb(88, 168, 212, 1));
-}
-
-.profile_content1{
-  position: relative;
-}
-
 .image_kazuki{
-  position: relative;
-
-
+    position: relative;
 }
 
-.image_kazuki .img01{
-  width: 60%;
-  height: 300px;
-  object-fit: cover;
-  position: absolute;
-  top: 15%;
-  right: 5%;
-  z-index: 1;
-    
+.kazuki1{
+    position: relative;
+    z-index: 0;
+    height: 300px;
+    width: 70%;
 }
 
-.image_kazuki .img02{
-  width: 70%;
-  height: 300px;
-  object-fit: cover;
-  position: relative;
-  z-index: 0;
+.kazuki2{
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 60%;
+    right: 5%;
+    top: 5%;
 }
 
-
-/* message */
-.englishname{
-  position: relative;
-  
+.first_name{
+    margin-left: 20%;
 }
 
-.english_lastname{
-  position: relative;
-  left: 7%;
+.last_name{
+    margin-left: 30%;
 }
 
-
-
-
-
-/* Ami */
-.profile_content2{
-  position: relative;
-}
-
+/* Ami Profile */
 .image_ami{
-  position: relative;
+    position: relative;
 }
 
-.image_ami .img01{
-  width: 60%;
-  height: 300px;
-  object-fit: cover;
-  position: absolute;
-  top: 10%;
-  z-index: 1;
-    
+.ami1{
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    width: 70%;
 }
 
-.image_ami .img02{
-  width: 60%;
-  height: 300px;
-  object-fit: cover;
-  position: relative;
-  top: 0;
-  left: 40%;
-  z-index: 0;
+.ami2{
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    height: 300px;
+    width: 60%;
+    right: 5%;
+    top: 5%;
 }
 
 
-
-.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
 
 /* Picture Space */
 .picture_space {
     background-image: url(../image/lovegraph_155.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 30rem;
     background-repeat: no-repeat;
 }
 
-
-/* Event Space */
+/* Event */
 .event{
-    background: linear-gradient( rgba(132, 167, 120, 0.9), rgba(7, 177, 229, 0.7));
-    padding-bottom: 4rem;
-    position: relative;
+    background: linear-gradient( rgb(211, 234, 202), rgba(7, 177, 229, 0.7));
 }
 
-.event-content{
-  position: relative;
-}
 
+/* Position */
 .schedule{
-  background-image: url(../image/スケジュール１.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* width: 320px; */
-  height: 200px;
-  /* margin-left: 25px; */
-  margin-right: 100px;
-  box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 19px 21px 8px 1px rgba(10,10,10,0.02);
-  position: relative;
-  z-index: 1;
+    background: linear-gradient(to bottom right,rgb(126, 183, 214) 5%,rgb(189, 234, 172));
+    border: white solid;
+    width: 330px;
+    position: relative;
+    z-index: 1;
+
 }
 
-.box{
-  /* padding: 60px; */
-  padding-top: 50px;
+.schedule_info{
+    padding: 2rem;
 }
 
-.box div{
-  color: black;
+/* MAP */
+
+.map{
+    position: relative;
+    z-index: 0;
+    bottom: 100px; 
 }
 
-/* rivera place */
-.place{
-  background-color: white;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  position: relative;
-  top: -60px;
-  z-index: 0;
+.map_info{
+    height: auto;
+    width: 350px;
 }
 
-
-
-/* access */
-/* .access{
-  background: linear-gradient( rgba(7, 177, 229, 0.7), rgba(7, 177, 229, 0.7) ), url(../image/riviera.jpg);
-  background-size: cover;
-  background-position: center;
-} */
-
-
-.access img{
-  width: auto;
-  height: 400px;
+/* Line */
+.head-border {
+    display: flex;
+    align-items: center;
+}
+ 
+.head-border:before,
+.head-border:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: white;
+}
+ 
+.head-border:before {
+    margin-right: 1rem;
+}
+ 
+.head-border:after {
+    margin-left: 1rem;
 }
 
+/* high-light */
+.map p span{
+    position: relative;
+    background: linear-gradient(transparent 40%, #B8D8D9 40%);
+    width: 80%;
+  }
 
 
-/* rsvp */
+/* ACCESS */
+.access_info span{
+    position: relative;
+    background: linear-gradient(transparent 70%, #d7e7ec 30%);
+    width: 80%;
+  }
+  
+
+
+/* RSVP */
 .rsvp{
     background: linear-gradient( rgba(7, 177, 229, 0.7), rgba(226, 216, 200, 1) );
-    background-position: center;
-    background-size: cover;
 }
-
-
-  
