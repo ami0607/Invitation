@@ -11,17 +11,25 @@ h1{
     font-family: 'Dancing Script';
 }
 
-h2{
+h2, li{
     font-family:'Times New Roman', Times, serif;
 }
+
+/* Navigation bar */
+
 
 /* HEADER */
 header{
     background-image: url(../image/lovegraph_7.jpg);
     background-size: cover;
     background-position: 50% center;
-    padding-top: 22rem;
-    padding-bottom: 22rem;
+    height: 780px;
+    position: relative;
+}
+
+header .container{
+    position: absolute;
+    top: 50%;
 }
 
 /* MESSAGE */
@@ -193,3 +201,6 @@ header{
 .rsvp{
     background: linear-gradient( rgba(7, 177, 229, 0.7), rgba(226, 216, 200, 1) );
 }
+
+
+
