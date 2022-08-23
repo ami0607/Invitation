@@ -3,7 +3,7 @@
 
 *{
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     
 }
 
@@ -23,13 +23,37 @@ header{
     background-image: url(../image/lovegraph_7.jpg);
     background-size: cover;
     background-position: 50% center;
-    height: 780px;
+    height: 750px;
     position: relative;
 }
 
 header .container{
     position: absolute;
     top: 50%;
+}
+
+/* TOP BUTTON */
+.pagetop{
+    /* display: none; */
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 3;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #7db4e6;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.pagetop a i{
+    font-size: 20px;
+    color:#fff;
+    line-height: 40px;
 }
 
 /* MESSAGE */
